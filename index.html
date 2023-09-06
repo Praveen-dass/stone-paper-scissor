@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <p class="title">stone paper scissor</p>
+    <button onclick="
+     playgame('stone');" class="game"
+    ><img src="./stone-emoji.png" class="icon"></button>
+    <button onclick="
+     playgame('paper');" class="game"
+    ><img src="./paper-emoji.png" class="icon"></button>
+    <button onclick="
+     playgame('scissors');" class="game"
+    ><img src="./scissors-emoji.png" class="icon"></button>
+
+    <p class="qresult result"></p>
+    <p class="moves"></p>
+    <p class="score" class="score"></p>
+
+    
+    <button onclick="
+     score.wins = 0;
+     score.losses = 0;
+     score.ties = 0;
+     localStorage.removeItem('score');
+     updateScore();
+    " class="reset">Reset</button>
+  </body>
+  <script src="focus.js"></script>
+</html>
